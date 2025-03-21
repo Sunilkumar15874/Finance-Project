@@ -7,7 +7,7 @@ pipeline{
                  echo 'github url checkout'
             }
         }
-        stage('codecompile with sunilt'){
+        stage('codecompile with sunil'){
             steps{
                 echo 'starting compiling'
                 sh 'mvn compile'
