@@ -30,12 +30,12 @@ pipeline{
         }
         stage('run dockerfile'){
           steps{
-               sh 'docker build -t myimg1 .'
+               sh 'docker build -t sk15874/addressbookupdate .'
            }
          }
         stage('port expose'){
             steps{
-                sh 'docker run -dt -p 8091:8091 --name c000 myimg1'
+                sh 'docker run -dt -p 8091:8091 --name c000 sk15874/addressbookupdate'
             }
         }   
     }
